@@ -3,11 +3,12 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 11.5px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-track {
     background-color: var(--cor-fundo);
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -20,14 +21,14 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 8px;
 }
 
 .cabecalho .menu {
     display: grid;
     grid-template-areas: "logo b-pesquisa menu-2";
-    grid-template-columns: auto 1000px;
-    grid-template-rows: auto 0%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     width: 100%;
     position: fixed;
     padding: 45px 0 3px 0;
@@ -39,7 +40,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: left;
     align-items: center;
     display: flex;
-    padding-left: 90px;
+    padding-left: 68px;
 }
 
 .cabecalho .menu .logo a {
@@ -49,12 +50,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cabecalho .menu .logo img {
-    width: 35px;
+    width: 30px;
 }
 
 .cabecalho .menu .nome {
     padding: 0 3px 0 5px;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--cor-padrao);
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
@@ -62,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cabecalho .menu .nome-identificador {
-    font-size: 11.5px;
+    font-size: 10px;
     padding-bottom: 25px;
     color: var(--cor-detalhes);
     font-family: sans-serif;
@@ -71,15 +72,16 @@ body::-webkit-scrollbar-thumb {
 .b-pesquisa {
     grid-area: b-pesquisa;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin-left: 80px;
+    align-items: center;
+    margin-right: 200px;
+    padding-left: 15px;
 }
 
 .b-pesquisa .barra-de-pesquisa {
-    width: 75%;
-    height: 50px;
+    width: 100%;
+    height: 41px;
     background-color: var(--cor-barra-de-pesquisa);
     border-radius: 50px;
     border: solid 1px var(--cor-borda);
@@ -89,33 +91,33 @@ body::-webkit-scrollbar-thumb {
 }
 
 .b-pesquisa .barra-de-pesquisa .pesquisa {
-    height: 50px;
-    width: 101%;
+    height: 41px;
+    width: 100%;
     background-color: var(--cor-barra-de-pesquisa);
     border: solid 1px var(--cor-borda);
-    padding-top: 5px;
+    padding-top: 2px;
     padding-left: 1.2em;
     border-radius: 50px 0 0 50px;
 }
 
 .b-pesquisa .barra-de-pesquisa .pesquisa::placeholder {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .b-pesquisa .barra-de-pesquisa input {
     color: var(--cor-letra-input-pesquisa);
-    font-size: 18px;
-    padding-bottom: 3px;
+    font-size: 16px;
+    padding-bottom: 2px;
 }
 
 .b-pesquisa .barra-de-pesquisa input:focus {
     box-shadow: 0 0 0 0;
-    outline: solid 1px var(--cor-borda-input-pesquisa);
+    outline: solid 0.1px var(--cor-borda-input-pesquisa);
     width: 100%;
-    height: 47.5px;
+    height: 38.8px;
     color: var(--cor-letra-input-pesquisa);
-    font-size: 18px;
-    padding-bottom: 3px;
+    font-size: 16px;
+    padding-bottom: 2px;
 }
 
 .b-pesquisa .barra-de-pesquisa input::-webkit-search-cancel-button {
@@ -129,13 +131,13 @@ body::-webkit-scrollbar-thumb {
 .b-pesquisa .barra-de-pesquisa .teclado {
     display: block;
     position: relative;
-    right: 3em;
-    top: 0.3em;
-    width: 1px;
+    right: 2.2em;
+    top: 0.2em;
+    width: 0.6px;
 }
 
 .b-pesquisa .barra-de-pesquisa .teclado img {
-    width: 40px;
+    width: 33px;
 }
 
 .b-pesquisa .barra-de-pesquisa .teclado img:hover {
@@ -144,8 +146,8 @@ body::-webkit-scrollbar-thumb {
 
 .b-pesquisa .barra-de-pesquisa .botao {
     background-color: rgb(34, 34, 34);
-    width: 80px;
-    height: 48px;
+    width: 70px;
+    height: 39px;
     border-radius: 0 56px 56px 0;
     justify-content: right;
     padding-right: 17px;
@@ -156,7 +158,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .b-pesquisa .barra-de-pesquisa .botao img {
-    width: 40px;
+    width: 34px;
 }
 
 .b-pesquisa .barra-de-pesquisa .botao .tag-pesquisa {
@@ -165,17 +167,15 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 140px;
-    width: 95px;
-    height: 40px;
+    margin-top: 113px;
+    width: 75px;
+    height: 34px;
     background-color: var(--cor-de-fundo-menu2);
     border-radius: 5px;
-    right: 415px;
-    opacity: 1;
-    pointer-events: none;
-    font-size: 16px;
-    font-weight: 200;
+    right: 345px;
     opacity: 0;
+    pointer-events: none;
+    font-size: 13px;
 }
 
 .b-pesquisa .barra-de-pesquisa .botao:hover .tag-pesquisa {
@@ -195,8 +195,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     background-color: var(--cor-fundo-icone);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-left: 10px;
     cursor: pointer;
     border: none;
@@ -207,7 +207,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .botao-microfone .botao img {
-    width: 50px;
+    width: 45px;
 }
 
 
@@ -217,16 +217,16 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 130px;
-    width: 190px;
-    height: 40px;
+    margin-top: 120px;
+    width: 160px;
+    height: 33px;
     background-color: var(--cor-de-fundo-menu2);
     border-radius: 5px;
-    right: 294px;
+    right: 235px;
     opacity: 1;
     pointer-events: none;
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 13px;
+    font-weight: 100;
     opacity: 0;
 }
 
@@ -237,34 +237,35 @@ body::-webkit-scrollbar-thumb {
 
 .menu-2 {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     grid-area: menu-2;
     width: 100%;
-    gap: 20px;
+    gap: 15px;
+    padding-right: 35px;
 }
 
 .menu-2 .criar {
     cursor: pointer;
-    width: 45px;
+    width: 40px;
     align-items: center;
     justify-content: right;
     display: flex;
-    padding-right: 6px;
+    padding-right: 7px;
 }
 
 .menu-2 .criar:hover {
     background-color: var(--cor-borda);
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     opacity: 1;
 }
 
 .menu-2 .criar img {
-    width: 30px;
+    width: 24px;
     position: fixed;
-    top: 22px;
+    top: 18px;
     overflow: hidden;
 }
 
@@ -274,14 +275,15 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 110px;
-    width: 50px;
-    height: 40px;
+    margin-top: 108px;
+    width: 40px;
+    height: 33px;
     background-color: var(--cor-de-fundo-menu2);
     border-radius: 5px;
-    right: 165px;
+    right: 133.5px;
     opacity: 0;
     pointer-events: none;
+    font-size: 13px;
 }
 
 .menu-2 .criar:hover .tag-criar{
@@ -291,7 +293,7 @@ body::-webkit-scrollbar-thumb {
 
 .menu-2 .notificar {
     cursor: pointer;
-    width: 45px;
+    width: 40px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -299,13 +301,13 @@ body::-webkit-scrollbar-thumb {
 
 .menu-2 .notificar:hover {
     background-color: var(--cor-borda);
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
 .menu-2 .notificar img {
-    width: 300px;
+    width: 23px;
     padding-bottom: 1px;
 }
 
@@ -315,14 +317,15 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 110px;
-    width: 110px;
-    height: 40px;
+    margin-top: 108px;
+    width: 90px;
+    height: 33px;
     background-color: var(--cor-de-fundo-menu2);
     border-radius: 5px;
-    right: 70px;
+    right: 55.5px;
     opacity: 0;
     pointer-events: none;
+    font-size: 13px;
 }
 
 .menu-2 .notificar:hover .tag-notificar{
@@ -336,7 +339,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu-2 .perfil img {
-    width: 37px;
+    width: 30px;
     border-radius: 100%;
 
 }
@@ -345,10 +348,10 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     grid-template-areas: "video-destaque propaganda"
         "video-destaque videos-sugeridos";
-    grid-template-columns: 1fr 505px;
-    grid-template-rows: 1fr 550px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
     gap: 20px;
-    padding: 80px 85px 0px 90px;
+    padding: 70px 85px 0px 68px;
 }
 
 .video-destaque {
@@ -356,13 +359,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .video-destaque .informacoes {
-    width: 870px;
+    width: 705px;
 }
 
 .video-destaque .informacoes .titulo {
     margin-top: 8px;
     color: var(--cor-padrao);
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .video-destaque .informacoes .visualizacoes p {
@@ -371,14 +374,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .video-destaque .informacoes p {
-    font-size: 17px;
+    font-size: 13px;
     color: var(--cor-padrao);
 }
 
 .video-destaque .informacoes .descricao {
     background-color: var(--cor-descricao);
-    width: 870px;
-    padding: 12px 15px 15px;
+    width: 700px;
+    padding: 10px 12px 10px;
     border-radius: 15px;
 }
 
@@ -395,8 +398,8 @@ body::-webkit-scrollbar-thumb {
 
 .propaganda .anuncio {
     display: flex;
-    width: 501px;
-    height: 90px;
+    width: 400px;
+    height: 65px;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px 0 20px;
@@ -404,7 +407,7 @@ body::-webkit-scrollbar-thumb {
 
 .propaganda .anuncio img {
     border-radius: 50%;
-    width: 60px;
+    width: 45px;
 }
 
 .propaganda .anuncio .perfil {
@@ -414,20 +417,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 .propaganda .anuncio .perfil .nome {
-    font-size: 22px;
+    font-size: 16px;
     color: var(--cor-padrao);
 }
 
 .propaganda .anuncio .botao {
     border-radius: 50px;
     display: flex;
-    width: 120px;
-    height: 50px;
+    width: 100px;
+    height: 40px;
     background-color: var(--cor-botao);
     color: var(--cor-fundo);
     justify-content: center;
     align-items: center;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .videos-sugeridos {
@@ -441,13 +444,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .videos-sugeridos .video .titulo {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 7px;
     color: var(--cor-padrao);
 }
 
 .videos-sugeridos .video p {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 5px;
     color: var(--cor-detalhes);
 }
@@ -459,5 +462,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 .videos-sugeridos .informacoes img {
-    width: 15px;
+    width: 10px;
 }
